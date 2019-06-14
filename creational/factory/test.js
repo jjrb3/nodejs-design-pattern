@@ -1,6 +1,6 @@
 
-const { PersonFactory }  = require('./person-factory');
-const { VehicleFactory } = require('./vehicle-factory');
+const { PersonFactory }  = require('./person/person-factory');
+const { VehicleFactory } = require('./vehicle/vehicle-factory');
 
 
 class FactoryTest {
