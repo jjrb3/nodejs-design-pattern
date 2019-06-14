@@ -1,5 +1,7 @@
 
 const { PersonFactory } = require('./person-factory');
+const { Car } = require('./car');
+const { Motorcycle } = require('./motorcycle');
 
 class FactoryTest {
 
@@ -15,6 +17,22 @@ class FactoryTest {
         let jeremy = personFactory.build();
 
         console.log(jeremy);
+    }
+
+    secondTest(wheels) {
+
+        switch (wheels) {
+            case 4:
+                return new Car({ wheels });
+                break;
+
+            case 2:
+                return new Motorcycle({ wheels });
+                break;
+
+            default:
+                return new Error('No vehicle found');
+        }
     }
 }
 
