@@ -1,5 +1,8 @@
 
-const { factoryTest } = require('./creational/factory/test');
+const { FactoryTest } = require('./creational/factory/test');
 
 
-factoryTest();
+// Factory Pattern
+let factory = new FactoryTest();
+
+factory.firstTest();

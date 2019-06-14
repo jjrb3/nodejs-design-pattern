@@ -1,21 +1,23 @@
 
 const { PersonFactory } = require('./person-factory');
 
+class FactoryTest {
 
-let factoryTest = () => {
+    firstTest() {
 
-    let personFactory = new PersonFactory();
+        let personFactory = new PersonFactory();
 
-    personFactory.setName('Jeremy');
-    personFactory.setSurname('Reyes');
-    personFactory.setAge('29');
-    personFactory.setSex('Male');
+        personFactory.setName('Jeremy');
+        personFactory.setSurname('Reyes');
+        personFactory.setAge('29');
+        personFactory.setSex('Male');
 
-    let jeremy = personFactory.build();
+        let jeremy = personFactory.build();
 
-    console.log(jeremy);
-};
+        console.log(jeremy);
+    }
+}
 
 module.exports = {
-    factoryTest
+    FactoryTest
 };
