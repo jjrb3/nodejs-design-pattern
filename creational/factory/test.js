@@ -5,6 +5,11 @@ const { VehicleFactory } = require('./vehicle/vehicle-factory');
 
 class FactoryTest {
 
+    constructor() {
+        console.log('::::::::::::::::::::: Factory :::::::::::::::::::::')
+    }
+
+
     firstTest() {
 
         let personFactory = new PersonFactory();
