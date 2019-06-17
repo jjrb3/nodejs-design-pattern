@@ -12,3 +12,4 @@ factory.secondTest();
 let proxy = new ProxyTest();
 
 proxy.firstTest();
+proxy.secondTest();
